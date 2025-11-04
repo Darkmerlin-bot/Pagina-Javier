@@ -1,0 +1,156 @@
+  
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: linear-gradient(to bottom, #746b6b, #1a1616);
+      
+    }
+
+    /* Encabezado */
+    header {
+      background-color: #111;
+      color: rgb(255, 255, 255);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    /* Logo */
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .logo img {
+      height: 50px;
+      margin-right: 10px;
+      border-radius: 10px;
+    }
+
+    /* Menú principal */
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      background-color: #18164d;
+    }
+
+    /* Submenú desplegable */
+    nav ul ul {
+      display: none;
+      position: absolute;
+      background-color: #000000;
+      top: 100%;
+      left: 0;
+      min-width: 180px;
+      z-index: 10;
+      border-radius: 0 0 8px 8px;
+    }
+
+    nav ul ul li a {
+      padding: 10px;
+    }
+
+    nav ul li:hover > ul {
+      display: block;
+    }
+
+    /* Sección principal */
+    .main-content {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .main-content h1 {
+      color: #222;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .main-content p {
+      color: #272727;
+      font-size: 1.1em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    footer {
+      background-color: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    .link {
+        color: #ccc;
+        text-decoration: none;
+    }
+.imgpie {
+        height: 160px;
+      margin: center;
+      border-radius: 10px;
+}
+
+.email {
+  margin: 0;
+  height: 60px;
+  
+}
+
+.instagram {
+  margin: 0;
+  height: 60px;
+  
+}
+
+.tarjeta {
+    display: none; /* Oculta la tarjeta por defecto */
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.tarjeta.visible {
+    display: block; /* Muestra la tarjeta cuando tiene la clase 'visible' */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#cerrar-tarjeta {
+    background-color: #dc3545;
+    margin-top: 10px;
+    
+}
+.tarjeta {
+  background-color: #000000;
+  border-radius: 0 10px 0 10px;
+}
